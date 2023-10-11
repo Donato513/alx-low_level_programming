@@ -11,6 +11,7 @@ int _abs(int c)
 	if (c < 0)
 	{
 		int abs_val = -c; /* Calculate the absolute value */
+
 		return (abs_val);
 	}
 	return (c);
