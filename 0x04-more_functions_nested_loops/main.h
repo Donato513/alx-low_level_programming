@@ -18,4 +18,4 @@ void print_square(int size);
 
 void print_triangle(int size);
 
-void print_numbers(void);
+int _putchar(char c);
