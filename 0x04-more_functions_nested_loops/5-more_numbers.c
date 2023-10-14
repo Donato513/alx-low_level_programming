@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * more_number - Print numbers 10 times from 0 to 14
+ * more_numbers - Print numbers 10 times from 0 to 14
  *
  * Description: This function prints the numbers from 0 to 14 in a specific
  * pattern 10 times, with proper formatting.
  *
  * Return: None
  */
-void more_number(void)
+void more_numbers(void)
 {
 	int x, y;
 
