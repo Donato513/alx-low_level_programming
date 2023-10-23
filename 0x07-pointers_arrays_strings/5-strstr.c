@@ -5,28 +5,25 @@
  * _strstr - Entry point
  * @haystack: input
  * @needle: input
- * Return; Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 char *_strstr(char *haystack, char *needle)
-
 {
 	for (; *haystack != '\0'; haystack++)
 	{
-		char *one = haystack;
-		char *two = needle;
+	char *one = haystack;
+	char *two = needle;
 
-		while (*one == *two && *two != '\0')
+	while (*one == *two && *two != '\0')
+	{
+	one++;
+	two++;
+	}
 
-		{
-			one++;
-			two++;
-
-		}
-
-		if (*two == '\0')
-			return (haystack);
+	if (*two == '\0')
+	return (haystack);
 	}
 
 	return (NULL);
 }
+
