@@ -1,19 +1,14 @@
 #include "main.h"
 
 /**
- * _memset - Entry point
- * @s: pointed destination
- * @b: constant byte
- * @n: bytes
+ * set_string - Entry point
+ * @s: input
+ * @to: input
  * Return: Always 0 (Success)
  */
 
-char *_memset(char *s, char b, unsigned int n)
+void set_string(char **s, char *to)
 
 {
-	unsigned int i;
- 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	*s = to;
 }
