@@ -4,8 +4,16 @@
 #include <ctype.h>
 #include <string.h>
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+/**
+ * _memset - fills memory with a constant byte
+ * @s: the memory area to fill
+ * @b: the constant byte
+ * @n: the number of bytes to fill
+ *
+ * Return: a pointer to the memory area s
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
-    return memcpy(dest, src, n);
+	return (memset(s, b, n));
 }
 

@@ -4,9 +4,14 @@
 #include <ctype.h>
 #include <string.h>
 
-char *_strncat(char *dest, char *src, int n)
+/**
+ * _atoi - converts a string to an integer
+ * @s: the string to convert
+ *
+ * Return: the integer value
+ */
+int _atoi(char *s)
 {
-    return strncat(dest, src, n);
+	return (atoi(s));
 }
-
 
