@@ -1,15 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
 /**
- * _puts - prints a string to stdout
- * @s: the string to print
+ * _puts - prints a string
+ * @str: The string to print
+ * return: void
  */
-void _puts(char *s)
-{
-	puts(s);
-}
 
+void _puts(char *str)
+
+{
+	for (; *str != '\0'; str++)
+	{
+	_putchar(*str);
+	}
+	_putchar('\n');
+
+}
