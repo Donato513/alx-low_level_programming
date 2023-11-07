@@ -2,12 +2,9 @@
 #include "dog.h"
 
 /**
- * main - Demonstrates using print_dog function
+ * main - check the code
  *
- * Description:
- * Initializes a dog structure and prints its info using print_dog.
- *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -16,9 +13,6 @@ int main(void)
 	my_dog.name = "Poppy";
 	my_dog.age = 3.5;
 	my_dog.owner = "Bob";
-
 	print_dog(&my_dog);
-
 	return (0);
 }
-
