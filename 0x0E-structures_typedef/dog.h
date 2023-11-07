@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include "dog.h"
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * main - Entry point; prints message and returns 0 for success.
- *
- * Return: 0 for success, non-zero for an error.
+ * struct dog - Dog attributes: name, age, owner.
+ * @name: Name of the dog.
+ * @age: Age of the dog.
+ * @owner: Owner's name.
  */
 
-int main(void)
+struct dog
 {
-    struct dog my_dog;
+	char *name;
+	float age;
+	char *owner;
+};
 
-    my_dog.name = "Django";
-    my_dog.age = 3.5;
-    my_dog.owner = "Jay";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
-}
+#endif /* DOG_H */
+
