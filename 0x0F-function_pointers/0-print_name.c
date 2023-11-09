@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_name - A function that uniquely displays a given name.
- * @name: The name to be uniquely showcased.
- * @f: The custom function for display.
+ * print_name - function that print a name
+ * @name: first value
+ * @f: function
+ *
  */
 
 void print_name(char *name, void (*f)(char *))
@@ -13,5 +14,3 @@ void print_name(char *name, void (*f)(char *))
 		return;
 	f(name);
 }
-
-
