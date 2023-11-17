@@ -2,10 +2,10 @@
 #include "lists.h"
 
 /**
- * list_length - Counts the number of elements in a singly linked list
- * @h: Pointer to the beginning of the list
+ * list_len - print number of the elements
+ * @h: position of the singly linked
  *
- * Return: Number of nodes in the list
+ * Return: number of nodes
  */
 
 size_t list_len(const list_t *h)
@@ -14,8 +14,8 @@ size_t list_len(const list_t *h)
 
 	while (h)
 	{
-		h = h->next;
-		count++;
+	h = h->next;
+	count++;
 	}
 	return (count);
 }
