@@ -6,6 +6,7 @@
 #include <string.h>
 #include <math.h>
 
+int get_endianness(void);
 int _putchar(char c);
 /*prototype _putchar*/
 unsigned int binary_to_uint(const char *b);
