@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -22,4 +25,4 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int get_endianness(void);
 /*function that checks the endianness.*/
 
-
+#endif /* MAIN_H */
